@@ -121,11 +121,11 @@
 	</div>
 </div> -->
 {% include foot.html %}
-<!--liberxueconnnet-menu-->
-<div id="directory-content" class="directory-content">
-    <div id="directory"></div>
+<!--toc-menu-->
+<div id="toc-content" class="toc-content">
+    <div id="toc"></div>
 </div>
-<!--liberxueconnnet-menu-->
+<!--toc-menu-->
 <script>
 var postDirectoryBuild = function() {
     var postChildren = function children(childNodes, reg) {
@@ -214,7 +214,7 @@ var postDirectoryBuild = function() {
         }
         directory.appendChild(root);
     };
-    createPostDirectory(document.getElementById('post-content'),document.getElementById('directory'), true);
+    createPostDirectory(document.getElementById('post-content'),document.getElementById('toc'), true);
 };
 postDirectoryBuild();
 </script>
