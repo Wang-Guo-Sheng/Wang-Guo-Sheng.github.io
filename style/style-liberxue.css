@@ -349,8 +349,6 @@ toc-content:after {
 #toc a{transition: 0.4s ease-in-out;}
 #toc a:hover{color:#eb5055;background-color:bisque;transition: 0.4s ease-in-out;}
 
-@-webkit-keyframes movdir{/* Safari and Chrome */0% {transform: translateX(2px);}33%{opacity:1;border-radius: 0.3%;background-color:bisque;}66%{}
-
 /* ==========================================================================
    #navigator
    ========================================================================== */
@@ -496,3 +494,4 @@ toc-content:after {
    .post-onelist-item-container .item-readmore{display:none;}
    .post-onelist-item-container .onelist-item-thumb{min-height:180px;}
 }
+@-webkit-keyframes movdir{/* Safari and Chrome */0% {transform: translateX(2px);}33%{opacity:1;border-radius: 0.3%;background-color:bisque;}66%{}
