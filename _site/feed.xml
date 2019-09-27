@@ -8,7 +8,7 @@
     
       <item>
         <title>试验博客：fcitx搜狗输入法提示栏恢复</title>
-        <category>tech</category>
+        <category>技术</category>
         <description>以此旧文测试博客功能。fcitx下恢复搜狗输入法提示栏ps aux | grep sogou-qimpanelkillsogou-qimpanelorkill $(ps aux | grep s...</description>
         <pubDate>2019-09-27 00:00:00 </pubDate>
         <link>https://github.wguosh.cn/2019/09/27/sogoufix.html</link>
