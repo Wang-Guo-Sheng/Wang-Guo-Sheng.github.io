@@ -1,5 +1,4 @@
-
-   $(function () {
+$(function () {
 
     // show hide subnav depending on scroll direction
     var position = $(window).scrollTop();
