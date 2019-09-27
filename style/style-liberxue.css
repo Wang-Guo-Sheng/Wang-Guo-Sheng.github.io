@@ -317,57 +317,17 @@ directory-content:after {
 #directory ul li ul li ul li a{margin-left:30px;color:#5f5f5f;}
 #directory a:hover{color:#eb5055;}
 
-
 /* ==========================================================================
    #nav
    ========================================================================== */
-  nav {
-    position: fixed;
-    top: 0em;
-    width: 100%;
-    background: #ffccff;
-    text-align:left;
-  }
-  
-  .box {
-    width: 100%;
-    height: 200vh;
-  }
-  
-  .down {
-    height: 0;
-    overflow: hidden;
-    transition: all 400ms;
-}
-  
-  .up {
-    transition: all 400ms;
-    height: 5em;
-  }
+nav {position: fixed;top: 0em;width: 100%;background: #fff3ff;text-align:left;}
+.down {height: 0;overflow: hidden;transition: all 400ms;}
+.up {transition: all 400ms;height: 5em;}
 
 /* ==========================================================================
    #toc
    ========================================================================== */
-.toc-content{position:relative; z-index:99999;max-width:8; line-height: 30px;
-    max-height: 10px;
-    overflow: hidden;
-    margin-right:auto!important;
-    margin-left:auto!important;
-    text-align:right;}
-toc-content:after {
-    content: "..."; position: absolute; bottom: 0; right: 0; padding-left: 40px;
-    background: -webkit-linear-gradient(left, transparent, #fff 55%);
-    background: -o-linear-gradient(right, transparent, #fff 55%);
-    background: -moz-linear-gradient(right, transparent, #fff 55%);
-    background: linear-gradient(to right, transparent, #fff 55%);
-}
-.toc-content.initial{opacity:0;}
-.toc-content.pinned{opacity:1;}
-.toc-content.unpinned{opacity:1;}
-.toc-content.headroom--top{opacity:0;}
-.toc-content.headroom--not-top{-webkit-transition:opacity 500ms ease-in-out;transition:opacity 500ms ease-in-out;opacity:1;}
-#toc{position:fixed;right:2%;top:7.18%;margin-top:200px;overflow-y:hidden;max-height:50px;display:inline-block;text-align:left;background-color:white;border-radius:3%;}
-#toc:hover{-webkit-animation:movdir 0.5s;position:fixed;right:2%;top: 7.18%;margin-top: 1em;overflow-y:auto;max-height:400px;display:inline-block;text-align:left;margin-top: 200px;background-color:white}
+#toc{margin-top:80px;overflow-y:auto;max-height:200px;display:inline-block;text-align:left;}
 #toc ul,#toc li{margin:0;padding-left:0;list-style:none;}
 #toc>ul{position:relative;border-left:1px solid #ddd;}
 #toc>ul>li::before{position:relative;top:0;left:-4px;display:inline-block;width:7px;height:7px;content:'';border-radius:50%;background-color:#eb5055;}
