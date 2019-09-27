@@ -320,14 +320,14 @@ directory-content:after {
 /* ==========================================================================
    #nav
    ========================================================================== */
-nav {position: fixed;top: 0em;width: 100%;height:80%;background: #e76883e8;text-align:left;}
-.down {height: 0;overflow: hidden;transition: all 400ms;}
-.up {transition: all 0.8s;height: 20%;overflow-y:auto;background: #e76883e8;}
+nav {position: fixed;top: 0em;width: 100%;height:0%;overflow-y:auto;background: #e76883e8;text-align:left;}
+.down {height: 0%;overflow: hidden;transition: all 0.8s;}
+.up {transition: all 0.8s;height: 40%;overflow-y:auto;background: #e76883e8;text-align:left;}
 
 /* ==========================================================================
    #toc
    ========================================================================== */
-#toc{margin-top:80px;max-height:200px;display:inline-block;text-align:left;}
+#toc{margin-left:10%;margin-top:80px;max-height:200px;display:inline-block;text-align:left;}
 #toc ul,#toc li{margin:0;padding-left:0;list-style:none;}
 #toc>ul{position:relative;border-left:1px solid #ddd;}
 #toc>ul>li::before{position:relative;top:0;left:-4px;display:inline-block;width:7px;height:7px;content:'';border-radius:50%;background-color:#eb5055;}
