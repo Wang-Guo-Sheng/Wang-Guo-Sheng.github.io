@@ -2,14 +2,16 @@
 layout: blog
 title: About this blog
 description: "简述"
-data: 2019年 09月 26日 星期四 23:52:09 CST
+date: 2019年 09月 26日 星期四 23:52:09 CST
 tags: 
-- LiberXue
-- 简述
+- about
 - 关于
 redirect_from:
   - /about/
 ---
+
+# 关于作者
+
 
 
 # 权利声明
@@ -24,10 +26,4 @@ redirect_from:
 #### 联系方式
 ******
 
-你可以通过以下几种方式联系到我。
-
-* [提交Issues](https://github.com/Liberxue/liberxue.github.io/issues)
-
-* [发邮件](mailto:liberxue@gmail.com)
-
-* [Twitter](https://twitter.com/liberxue).
+* [电邮](mailto:wguosh@gmail.com)
