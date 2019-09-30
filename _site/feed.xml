@@ -7,6 +7,15 @@
     <atom:link href="https://github.wguosh.cn/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Manjaro 系统 VASP 编译简记</title>
+        <category>技术</category>
+        <description>编译于2019年9月23日，VASP版本5.4.4。根据sobereva给出的CentOS7上的编译过程改写，请参考原帖。安装 Intel 编译器下载的版本是 parallel_studio_x...</description>
+        <pubDate>2019-09-29 00:00:00 </pubDate>
+        <link>https://github.wguosh.cn/2019/09/29/manjarovaspcompilation.html</link>
+        <guid isPermaLink="true">https://github.wguosh.cn/2019/09/29/manjarovaspcompilation.html</guid>
+      </item>
+    
+      <item>
         <title>试验博客：fcitx搜狗输入法提示栏恢复</title>
         <category>技术</category>
         <description>以此旧文测试博客功能。fcitx下恢复搜狗输入法提示栏关闭进程重启ps aux | grep sogou-qimpanelkillsogou-qimpanel单行命令kill $(ps aux ...</description>
