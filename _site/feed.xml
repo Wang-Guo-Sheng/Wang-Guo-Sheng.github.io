@@ -7,6 +7,15 @@
     <atom:link href="https://github.wguosh.cn/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>鲁迅博物馆记游兼怀故事</title>
+        <category>路途</category>
+        <description>为了让一两天的闲暇显得更长一些，多换一些场景，到远处的某个房间看一断记忆生疏了的历史，走在路上，体察几个新的视角，人间的事情便仿佛焕发着异彩地重现到眼前。总是晴天的地方，凉风顺着城墙跟下时断时续...</description>
+        <pubDate>2019-10-31 00:00:00 </pubDate>
+        <link>https://github.wguosh.cn/2019/10/31/luxun-museum.html</link>
+        <guid isPermaLink="true">https://github.wguosh.cn/2019/10/31/luxun-museum.html</guid>
+      </item>
+    
+      <item>
         <title>Manjaro 系统 VASP 编译简记</title>
         <category>技术</category>
         <description>编译于2019年9月23日，VASP版本5.4.4。根据sobereva给出的CentOS7上的编译过程改写，请参考原帖。安装 Intel 编译器下载的版本是 parallel_studio_x...</description>
