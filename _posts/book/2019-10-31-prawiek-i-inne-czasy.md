@@ -3,7 +3,7 @@ layout: blog
 istop: false
 book: true
 title: "太古和其他的时间"
-background-image: https://img1.doubanio.com/view/subject/l/public/s29597667.jpg
+background-image: http://cover.read.duokan.com/mfsv2/download/fdsc3/p01skj7W8dSw/3LMOY49yvuDp1e.jpg!l
 date: 2019-10-31
 category: 读书
 tags:
