@@ -29,9 +29,9 @@ links:
   - name:         致理
     url:          /phil
     external:     false
-  - name:.        梦呓
-    url:.         /fantasy
-    external:.    false
+  - name:         梦呓
+    url:          /fantasy
+    external:     false
   - name:         归档
     url:          /archives
     external:     false
