@@ -49,3 +49,6 @@ defaults:
   - values:
       layout: "default"
 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
