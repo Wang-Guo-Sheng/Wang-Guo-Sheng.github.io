@@ -13,7 +13,7 @@ tags:
 
 直接使用无法在 jupyter-notebook 中显示图窗，安装插件`jupyterlab-plotly`后可用。
 
-### 安装
+### 安装[^ 1]
 
 ```bash
 conda install nodejs
