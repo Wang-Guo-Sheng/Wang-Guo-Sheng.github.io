@@ -3,7 +3,7 @@ layout: blog
 istop: false
 tech: true
 title: "在 Jupyter Lab 中使用 plotly"
-background-image: 
+background-image: style/img/md/output_2_1.png
 date: 2021-03-29 17:50
 category: 技术
 tags:
@@ -15,7 +15,7 @@ tags:
 
 ### 安装
 
-```
+```bash
 conda install nodejs
 jupyter labextension install jupyterlab-plotly
 ```
