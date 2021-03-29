@@ -30,4 +30,4 @@ fig = go.Figure(data=go.Bar(y=[2, 3, 1]))
 fig.show()
 ```
 
-![output](style/img/md/output_2_1.png)
+![output](../../../style/img/md/output_2_1.png)
