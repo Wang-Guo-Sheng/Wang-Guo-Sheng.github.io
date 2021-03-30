@@ -12,19 +12,19 @@ tags:
 
 今天，是第一天。
 
->- Ruby 是一种通用的、解释的编程语言。
->- Ruby 是一种真正的面向对象编程语言。
->- Ruby 是一种类似于 Python 和 Perl 的服务器端脚本语言。
->- Ruby 可以用来编写通用网关接口（CGI）脚本。
->- Ruby 可以被嵌入到超文本标记语言（HTML）。
->- Ruby 语法简单，这使得新的开发人员能够快速轻松地学习 Ruby。
->- Ruby 与 C++ 和 Perl 等许多编程语言有着类似的语法。
->- Ruby 可扩展性强，用 Ruby 编写的大程序易于维护。
->- Ruby 可用于开发的 Internet 和 Intranet 应用程序。
->- Ruby 可以安装在 Windows 和 POSIX 环境中。
->- Ruby 支持许多 GUI 工具，比如 Tcl/Tk、GTK 和 OpenGL。
->- Ruby 可以很容易地连接到 DB2、MySQL、Oracle 和 Sybase。
->- Ruby 有丰富的内置函数，可以直接在 Ruby 脚本中使用。
+> Ruby 是一种通用的、解释的编程语言。
+> Ruby 是一种真正的面向对象编程语言。
+> Ruby 是一种类似于 Python 和 Perl 的服务器端脚本语言。
+> Ruby 可以用来编写通用网关接口（CGI）脚本。
+> Ruby 可以被嵌入到超文本标记语言（HTML）。
+> Ruby 语法简单，这使得新的开发人员能够快速轻松地学习 Ruby。
+> Ruby 与 C++ 和 Perl 等许多编程语言有着类似的语法。
+> Ruby 可扩展性强，用 Ruby 编写的大程序易于维护。
+> Ruby 可用于开发的 Internet 和 Intranet 应用程序。
+> Ruby 可以安装在 Windows 和 POSIX 环境中。
+> Ruby 支持许多 GUI 工具，比如 Tcl/Tk、GTK 和 OpenGL。
+> Ruby 可以很容易地连接到 DB2、MySQL、Oracle 和 Sybase。
+> Ruby 有丰富的内置函数，可以直接在 Ruby 脚本中使用。
 
 ```bash
  % ruby -v
