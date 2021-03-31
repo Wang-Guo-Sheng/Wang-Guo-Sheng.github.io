@@ -7,18 +7,18 @@
 // });
 
 $(function(){
-    var url_2021_04_01_01_21_dfd1e3b4 = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day1/guess_rand.rb";
+    var url_2021_04_01_01_21_dfd1e3b4 = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day1/guess_rand.html";
     $("#includedContent_2021_04_01_01_21_dfd1e3b4").load(url_2021_04_01_01_21_dfd1e3b4)
 })
 $(function(){
-    var url_2021_04_01_01_21_77243162 = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day1/hello_world.rb";
+    var url_2021_04_01_01_21_77243162 = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day1/hello_world.html";
     $("#includedContent_2021_04_01_01_21_77243162").load(url_2021_04_01_01_21_77243162)
 })
 $(function(){
-    var url_2021_04_01_01_21_d0f46fc7 = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day1/range_as_a_condition.rb";
+    var url_2021_04_01_01_21_d0f46fc7 = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day1/range_as_a_condition.html";
     $("#includedContent_2021_04_01_01_21_d0f46fc7").load(url_2021_04_01_01_21_d0f46fc7)
 })
 $(function(){
-    var url_2021_04_01_01_21_e0579da1 = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day1/var_within_range.rb";
+    var url_2021_04_01_01_21_e0579da1 = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day1/var_within_range.html";
     $("#includedContent_2021_04_01_01_21_e0579da1").load(url_2021_04_01_01_21_e0579da1)
 })
