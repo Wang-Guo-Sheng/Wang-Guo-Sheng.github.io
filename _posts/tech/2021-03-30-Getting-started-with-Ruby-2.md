@@ -166,5 +166,3 @@ irb(main):066:0> 4.class.superclass.superclass.superclass.superclass
 => nil
 ```
 
-<div id="includedContent_2021_03_31_22_19"></div>
-
