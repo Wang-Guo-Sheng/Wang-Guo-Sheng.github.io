@@ -2,7 +2,7 @@
 layout: blog
 istop: false
 tech: true
-title: "Getting started with Ruby"
+title: "Getting started with Ruby-1"
 background-image: https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1200px-Ruby_logo.svg.png
 date: 2021-03-30 23:23
 category: 技术
@@ -38,12 +38,12 @@ ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux-gnu]
 
 ```ruby
 % irb
-irb(main):001:0> lang = 'Ruby'
+>> lang = 'Ruby'
 => "Ruby"
-irb(main):002:0> puts "hello, #{lang}"
+>> puts "hello, #{lang}"
 hello, Ruby
 => nil
-irb(main):003:0> puts 'hello, #{lang}'
+>> puts 'hello, #{lang}'
 hello, #{lang}
 => nil
 ```
@@ -52,13 +52,13 @@ hello, #{lang}
 
 ```ruby
  % irb
-irb(main):001:0> 4
+>> 4
 => 4
-irb(main):002:0> 4.class
+>> 4.class
 => Integer
-irb(main):003:0> 4 + 4
+>> 4 + 4
 => 8
-irb(main):004:0> 4.methods
+>> 4.methods
 => [:-@, :**, :<=>, :upto, :<<, :<=, :>=, :==, :chr, :===, :>>, :[], :%, :&, :inspect, :+, :ord, :-, :/, :*, :size, :succ, :<, :>, :to_int, :coerce, :divmod, :to_s, :to_i, :fdiv, :modulo, :remainder, :abs, :magnitude, :integer?, :numerator, :denominator, :floor, :ceil, :round, :truncate, :lcm, :to_f, :^, :gcdlcm, :odd?, :even?, :allbits?, :anybits?, :nobits?, :downto, :times, :pred, :pow, :bit_length, :digits, :rationalize, :gcd, :to_r, :next, :div, :|, :~, :+@, :eql?, :singleton_method_added, :i, :real?, :zero?, :nonzero?, :finite?, :infinite?, :step, :positive?, :negative?, :rectangular, :arg, :real, :imaginary, :imag, :abs2, :angle, :phase, :conjugate, :conj, :to_c, :polar, :clone, :dup, :rect, :quo, :between?, :clamp, :instance_variable_set, :instance_variable_defined?, :remove_instance_variable, :instance_of?, :kind_of?, :is_a?, :tap, :instance_variable_get, :instance_variables, :method, :public_method, :singleton_method, :define_singleton_method, :public_send, :extend, :to_enum, :enum_for, :pp, :=~, :!~, :respond_to?, :freeze, :object_id, :send, :display, :nil?, :hash, :class, :singleton_class, :itself, :yield_self, :taint, :tainted?, :untrust, :untaint, :trust, :untrusted?, :methods, :frozen?, :protected_methods, :singleton_methods, :public_methods, :private_methods, :!, :equal?, :instance_eval, :instance_exec, :!=, :__send__, :__id__]
 ```
 
@@ -70,17 +70,17 @@ irb(main):004:0> 4.methods
 #### `true` 和 `false`是一等对象
 
 ```ruby
-irb(main):017:0> x = 4
+>> x = 4
 => 4
-irb(main):018:0> x < 5
+>> x < 5
 => true
-irb(main):019:0> x <= 4
+>> x <= 4
 => true
-irb(main):020:0> x > 4
+>> 4
 => false
-irb(main):021:0> false.class
+>> false.class
 => FalseClass
-irb(main):022:0> true.class
+>> true.class
 => TrueClass
 ```
 
@@ -91,9 +91,9 @@ irb(main):022:0> true.class
 `if` 和 `unless` 可以用单行形式：
 
 ```ruby
-irb(main):024:0> puts "Hello" unless true
+>> puts "Hello" unless true
 => nil
-irb(main):025:0> puts "Hello" if true
+>> puts "Hello" if true
 Hello
 => nil
 ```
@@ -115,7 +115,7 @@ Hello
 - 只有 `false` 和 `nil` 是 `false`，其它所有值都是 `true`，`0` 也是 `true` 。
 
 ```ruby
-irb(main):034:0> puts 'a' if 0
+>> puts 'a' if 0
 a
 => nil
 ```
@@ -131,11 +131,11 @@ a
 鸭子类型并不在乎其内在类型可能是什么。只要它像鸭子一样走路，像鸭子一样嘎嘎叫，那它就是只鸭子。
 
 ```ruby
-irb(main):035:0> a = [100.0, '100']
+>> a = [100.0, '100']
 => [100.0, "100"]
-irb(main):036:0> a[0].to_i
+>> a[0].to_i
 => 100
-irb(main):038:0> a[1].to_i
+>> a[1].to_i
 => 100
 ```
 
@@ -156,11 +156,11 @@ irb(main):038:0> a[1].to_i
 [String Replace](https://stackoverflow.com/questions/8381499/replace-words-in-a-string-ruby)
 
 ```ruby
-irb(main):039:0> s = 'Joe Doe is known by Joe'
+>> s = 'Joe Doe is known by Joe'
 => "Joe Doe is known by Joe"
-irb(main):041:0> s.sub! 'Doe', 'Dane'
+>> s.sub! 'Doe', 'Dane'
 => "Joe Dane is known by Joe"
-irb(main):044:0> s.gsub! 'Joe', 'Jane'
+>> s.gsub! 'Joe', 'Jane'
 => "Jane Dane is known by Jane"
 ```
 
@@ -173,13 +173,13 @@ irb(main):044:0> s.gsub! 'Joe', 'Jane'
 两点：闭合，三点：左闭右开。
 
 ```ruby
-irb(main):051:0> puts "#{(1..5).to_a}"
+>> puts "#{(1..5).to_a}"
 [1, 2, 3, 4, 5]
 => nil
-irb(main):052:0> puts "#{(1...5).to_a}"
+>> puts "#{(1...5).to_a}"
 [1, 2, 3, 4]
 => nil
-irb(main):053:0> (0..5).each do |d| puts "#{d}" end
+>> (0..5).each do |d| puts "#{d}" end
 0
 1
 2
