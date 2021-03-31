@@ -1,5 +1,16 @@
+@charset 'UTF-8';
+
+
 .highlight .hll { background-color: #ffffcc }
-.highlight  { background: #f8f8f8; }
+.highlight{
+    font-family: "Abril Fatface", serif，Menlo,Bitstream Vera Sans Mono,DejaVu Sans Mono,Monaco,Consolas,monospace;
+    font-size:13px;
+    background: #f8f8f8;
+    border: 1px solid #eaeaea;
+    border-radius: 2px;
+    color: #2b2b0a;
+    margin: 0 6px;
+    }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
 .highlight .k { color: #008000; font-weight: bold } /* Keyword */
