@@ -195,13 +195,58 @@ MacRuby
 - 初始化： `initialize` 方法
 - 用 `attr` 和 `attr_accessor` 关键字定义实例变量。attr 定义实例变量和访问变量的同名方法，而 attr_accessor 定义实例变量、访问方法和设置方法。
 
-### 模块
+单继承：
+```ruby
+class BigBox < Box
+```
+
+Ruby不支持多继承。
+
+### 模块 Mixin
 
 一个类要继承几组不同的行为，需要让一个子类继承多个超类。
 
 多继承不仅复杂，且问题多多。Java采用接口解决这一问题，而Ruby采用的是模块。
 
 模块是函数和常量的集合。在类中包含一个模块，从而包含模块的行为和常量。
+
+**例**  `to_file.rb`
+
+<div id = "includedContent_2021_04_02_05_46_c9d78cf7"></div>
+
+```bash
+% ruby to_file.rb 
+% cat object_60.txt 
+matx% 
+```
+
+上面 `ToFile` 模块依赖于 `to_s` 方法，而这个方法在模块里面没有定义，是在 `Person` 类中才定义的。这种依赖关系是隐式的，需要通过鸭子类型实现。
+
+模块的功能**混入**（Mixin）类中。
+
+> Mixin风格：利用简明的单继承，先定义类的主要部分，然后用模块添加额外功能。
+
+### 模块、可枚举和集合
+
+- 如果想让类可枚举，必须实现 `each` 方法；
+- 如果想让类可比较，必须实现 `<=>` 操作符
+
+太空船操作符 `<=>` ：
+- 返回值是 -1, 1, 0分别代表小于、大于、等于
+
+实现了太空船操作符的类可以调用`sort`方法排序，还可以调
+用`min`和`max`方法计算最小值和最大值。
+
+常用方法：
+- 任意 `any?`
+- 所有 `all?`
+- 遍历 `collect` 或 `map`
+- 查找 `find`
+- 筛选 `select` 或 `find_all`
+- 属于 `member?`
+- 连环作用 `inject(<initial_value>)` ， 即 python 的 `accumulate`/`reduce`， Haskell的`fold`， 用来连加、连乘等。
+
+### 第二天自习
 
 
 
