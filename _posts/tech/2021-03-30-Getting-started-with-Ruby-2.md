@@ -20,23 +20,23 @@ tags:
 
 ```ruby
  % irb
-irb(main):001:0> [1].class
+>> [1].class
 => Array
-irb(main):002:0> [1].methods.include?(:[])
+>> [1].methods.include?(:[])
 => true
-irb(main):005:0> Array.[](1)
+>> Array.[](1)
 => [1]
-irb(main):010:0> a = [1, [2, 3]]
+>> a = [1, [2, 3]]
 => [1, [2, 3]]
-irb(main):016:0> a[1][1]
+>> a[1][1]
 => 3
-irb(main):011:0> a.push(4)
+>> a.push(4)
 => [1, [2, 3], 4]
-irb(main):012:0> a.pop
+>> a.pop
 => 4
-irb(main):013:0> a.pop
+>> a.pop
 => [2, 3]
-irb(main):014:0> a.pop
+>> a.pop
 => 1
 ```
 
@@ -47,24 +47,24 @@ irb(main):014:0> a.pop
 散列表就是一串这样的键－值对：
 
 ```ruby
-irb(main):021:0> n = {1 => 'one', 2 => 'two', :string => 'Hello'}
+>> 'Hello'}
 => {1=>"one", 2=>"two", :string=>"Hello"}
-irb(main):022:0> n[1]
+>> n[1]
 => "one"
-irb(main):023:0> n[:string]
+>> n[:string]
 => "Hello"
 ```
 
 **符号** 是冒号开头的标识符。与字符串不同的是，写法相同的标识符始终是同一个对象：
 
 ```ruby
-irb(main):024:0> 'string'.object_id
+>> 'string'.object_id
 => 70368337399960
-irb(main):025:0> 'string'.object_id
+>> 'string'.object_id
 => 70368337213480
-irb(main):026:0> :string.object_id
+>> :string.object_id
 => 287068
-irb(main):027:0> :string.object_id
+>> :string.object_id
 => 287068
 ```
 
@@ -79,7 +79,7 @@ Ruby虽然不支持 kwargs ，但可以用散列表来模拟它，即在函数�
 如
 
 ```ruby
-irb(main):029:0> 3.times {puts 'hiya'}
+>> 3.times {puts 'hiya'}
 hiya
 hiya
 hiya
@@ -91,9 +91,9 @@ hiya
 用在代码块中 `||` 包含参数：
 
 ```ruby
-irb(main):030:0> arr = ['a', 'b', 'c']
+>> arr = ['a', 'b', 'c']
 => ["a", "b", "c"]
-irb(main):031:0> arr.each {|ele| puts ele}
+>> arr.each {|ele| puts ele}
 a
 b
 c
@@ -103,17 +103,17 @@ c
 #### 在定义方法时调用 `yield` 输入的调用代码块：
 
 ```ruby
-irb(main):032:0> class Integer
-irb(main):033:1>     def my_times
-irb(main):034:2>         i = self
-irb(main):035:2>         while i > 0
-irb(main):036:3>             i = i - 1
-irb(main):037:3>             yield
-irb(main):038:3>         end
-irb(main):039:2>     end
-irb(main):040:1> end
+>> class Integer
+>>     def my_times
+>>         i = self
+>> 0
+>>             i = i - 1
+>>             yield
+>>         end
+>>     end
+>> end
 => :my_times
-irb(main):041:0> 3.my_times {puts 'mangy moose'}
+>> 3.my_times {puts 'mangy moose'}
 mangy moose
 mangy moose
 mangy moose
@@ -125,18 +125,18 @@ mangy moose
 参数名之前加 `&`  将代码块作为闭包传递给函数：
 
 ```ruby
-irb(main):049:0> def call_block(&block)
-irb(main):050:1>     block.call
-irb(main):051:1> end
+>> def call_block(&block)
+>>     block.call
+>> end
 => :call_block
-irb(main):052:0> call_block {puts 'Hello'}
+>> call_block {puts 'Hello'}
 Hello
 => nil
-irb(main):053:0> def pass_block(&block)
-irb(main):054:1>     call_block(&block)
-irb(main):055:1> end
+>> def pass_block(&block)
+>>     call_block(&block)
+>> end
 => :pass_block
-irb(main):056:0> pass_block {puts 'Hello'}
+>> pass_block {puts 'Hello'}
 Hello
 => nil
 ```
@@ -154,15 +154,44 @@ Hello
 Ruby的类必须继承自超类。
 
 ```ruby
-irb(main):062:0> 4.class
+>> 4.class
 => Integer
-irb(main):063:0> 4.class.superclass
+>> 4.class.superclass
 => Numeric
-irb(main):064:0> 4.class.superclass.superclass
+>> 4.class.superclass.superclass
 => Object
-irb(main):065:0> 4.class.superclass.superclass.superclass
+>> 4.class.superclass.superclass.superclass
 => BasicObject
-irb(main):066:0> 4.class.superclass.superclass.superclass.superclass
+>> 4.class.superclass.superclass.superclass.superclass
 => nil
 ```
+
+**例** `tree.rb`
+
+<div id = "includedContent_2021_04_02_01_01_26cf22f7"></div>
+
+```bash
+ % ruby tree.rb
+Visiting a node
+Ruby
+
+visiting entire tree
+Ruby
+Reia
+MacRuby
+```
+
+- 实例变量：对象的值
+- 类变量：类的值
+
+命名习惯：
+- 类名：大写驼峰 `CamelCase`
+- 实例变量： `@` 开头，小写下划线 `underscore_style`
+- 类变量：  `@@`  开头，小写下划线 `underscore_style`
+- 常量：全大写 `ALL_CAPS` 。
+- 方法：小写下划线 `underscore_style`
+- 用于逻辑测试的方法、函数加上问号 `test?`
+
+- 初始化： `initialize` 方法
+- 用 `attr` 和 `attr_accessor` 关键字定义实例变量。attr 定义实例变量和访问变量的同名方法，而 attr_accessor 定义实例变量、访问方法和设置方法。
 

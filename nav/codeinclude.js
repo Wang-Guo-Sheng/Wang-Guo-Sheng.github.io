@@ -22,3 +22,7 @@ $(function(){
     var url_2021_04_01_01_21_e0579da1 = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day1/var_within_range.html";
     $("#includedContent_2021_04_01_01_21_e0579da1").load(url_2021_04_01_01_21_e0579da1)
 })
+$(function(){
+    var url_2021_04_02_01_01_26cf22f7 = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day2/tree.html";
+    $("#includedContent_2021_04_02_01_01_26cf22f7").load(url_2021_04_02_01_01_26cf22f7)
+})
