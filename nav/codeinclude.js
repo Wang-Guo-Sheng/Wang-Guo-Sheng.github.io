@@ -23,10 +23,26 @@ $(function(){
     $("#includedContent_2021_04_01_01_21_e0579da1").load(url_2021_04_01_01_21_e0579da1)
 })
 $(function(){
-    var url_2021_04_02_01_01_26cf22f7 = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day2/tree.html";
-    $("#includedContent_2021_04_02_01_01_26cf22f7").load(url_2021_04_02_01_01_26cf22f7)
+    var url_2021_04_02_22_07_6fd6d33b = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day2/to_file.html";
+    $("#includedContent_2021_04_02_22_07_6fd6d33b").load(url_2021_04_02_22_07_6fd6d33b)
 })
 $(function(){
-    var url_2021_04_02_05_46_c9d78cf7 = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day2/to_file.html";
-    $("#includedContent_2021_04_02_05_46_c9d78cf7").load(url_2021_04_02_05_46_c9d78cf7)
+    var url_2021_04_02_22_07_4eea9664 = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day2/grep.html";
+    $("#includedContent_2021_04_02_22_07_4eea9664").load(url_2021_04_02_22_07_4eea9664)
+})
+$(function(){
+    var url_2021_04_02_22_07_affe385c = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day2/write_file.html";
+    $("#includedContent_2021_04_02_22_07_affe385c").load(url_2021_04_02_22_07_affe385c)
+})
+$(function(){
+    var url_2021_04_02_22_07_ef8941a = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day2/tree.html";
+    $("#includedContent_2021_04_02_22_07_ef8941a").load(url_2021_04_02_22_07_ef8941a)
+})
+$(function(){
+    var url_2021_04_02_22_07_6cb66ded = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day2/each_four.html";
+    $("#includedContent_2021_04_02_22_07_6cb66ded").load(url_2021_04_02_22_07_6cb66ded)
+})
+$(function(){
+    var url_2021_04_02_22_07_1f30db9d = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day2/tree_init.html";
+    $("#includedContent_2021_04_02_22_07_1f30db9d").load(url_2021_04_02_22_07_1f30db9d)
 })

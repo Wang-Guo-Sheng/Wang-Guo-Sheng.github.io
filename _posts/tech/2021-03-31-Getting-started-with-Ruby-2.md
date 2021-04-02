@@ -168,7 +168,7 @@ Ruby的类必须继承自超类。所有Ruby类都继承自唯一共同祖先。
 
 **例** `tree.rb`
 
-<div id = "includedContent_2021_04_02_01_01_26cf22f7"></div>
+<div id = "includedContent_2021_04_02_22_07_ef8941a"></div>
 
 ```bash
  % ruby tree.rb
@@ -212,7 +212,7 @@ Ruby不支持多继承。
 
 **例**  `to_file.rb`
 
-<div id = "includedContent_2021_04_02_05_46_c9d78cf7"></div>
+<div id = "includedContent_2021_04_02_22_07_6fd6d33b"></div>
 
 ```bash
 % ruby to_file.rb 
@@ -248,5 +248,116 @@ matx%
 
 ### 第二天自习
 
+#### 打开文件
 
+`File` 类用于处理文件，`Dir` 类用于处理目录。
 
+`File.open` 方法可与代码块关联，而 `File.new` 方法不能。
+
+`write_file.rb`
+
+<div id = "includedContent_2021_04_02_22_07_affe385c"></div>
+
+```bash
+% ruby write_file.rb
+% cat output_open 
+Content.%
+% cat output_new 
+Content.%
+```
+
+#### 数组与散列表
+
+用 `to_h` 和 `to_a` 在数组和散列表间相互转换。
+
+遍历散列表：
+
+```ruby
+hash.each do |name, values|
+  values.each do |value|
+    # ...
+  end
+end
+```
+
+#### 基本数据结构
+
+栈和队列相关方法： `push`/`<<` , `pop` , `append` , `prepend`, `shift`, `unshift`, `last`
+
+实现栈和队列等：
+
+> Using push / pop gives LIFO(last in first out) behavior (stack), while using push / shift or unshift / pop gives FIFO behavior (queue).
+Maps are hashes, and a Set class already exists.
+You could implement a linked list using classes, but arrays will give linked-list like behavior using the standard array methods.
+
+> The Array class stores an index to the first element being used in the array. Calling Array::Shift increments the index, so it runs in O(1) time (nothing is actually shifted). Array::Push runs in O(1), unless the array is full, in which case it needs to create a new array with more capacity and copy the original array.
+
+> [stackoverflow](https://stackoverflow.com/questions/5006395/does-ruby-have-containers-like-stacks-queues-linked-lists-maps-or-sets)
+
+`push`/`<<` 的区别：
+
+> << accepts a single argument, and pushes it onto the end of the array.
+> push, on the other hand, accepts one or more arguments, pushing them all onto the end.
+> [stackoverflow](https://stackoverflow.com/questions/10569529/ruby-difference-between-array-and-arraypush)
+
+链表
+```ruby
+class Node
+    attr_accessor :value, :next_node
+
+    def initialize(value, next_node = nil)
+        @value = value
+        @next_node = next_node
+    end
+end
+```
+
+#### `each` 与 `each_slice`
+
+`each_four.rb`
+
+<div id = "includedContent_2021_04_02_22_07_6cb66ded"></div>
+
+#### 接受嵌套散列表或者数组输入的树
+
+`tree_init.rb`
+
+<div id = "includedContent_2021_04_02_22_07_1f30db9d"></div>
+
+```bash
+% ruby tree_init.rb
+Visiting a node
+grandpa
+
+visiting entire tree
+grandpa
+dad
+child1
+child2
+uncle
+cousin1
+cousin2
+```
+
+#### grep
+
+读取文件，`IO.readlines` 按行读成数组， `IO.foreach` 按行读到代码块中执行。
+
+用 `ARGV` 获取命令行输入。
+
+`grep.rb`
+
+<div id = "includedContent_2021_04_02_22_07_4eea9664"></div>
+
+```bash
+% ruby grep.rb "\beu\b" "lipsum.txt"
+In sed sapien a lacus egestas vehicula vel eu ipsum.
+Donec leo nulla, lobortis nec commodo eu, congue lobortis orci.
+Curabitur tortor enim, interdum eu diam ac, dictum tempor ligula.
+Nam tortor metus, dictum eget dapibus vitae, hendrerit eu ante.
+Vivamus eu pharetra magna.
+Pellentesque faucibus erat eu tortor tempus lacinia.
+Pellentesque laoreet quam eget sem laoreet, eu commodo dui tristique.
+Vestibulum eu ipsum consectetur, aliquam ex eleifend, tempus leo.
+Suspendisse ligula diam, pellentesque eu faucibus non, feugiat non massa.
+```
