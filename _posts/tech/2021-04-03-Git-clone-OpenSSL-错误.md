@@ -3,13 +3,14 @@ layout: blog
 istop: false
 tech: true
 title: "Git clone OpenSSL 错误"
-background-image: 
+background-image: https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/225px-Tux.svg.png
 date: 2021-04-03 03:57
 category: 技术
 tags:
-- proxy
-- socks5
-- proxychains
+- yay
+- aur
+- git
+- cert
 ---
 
 更新 `yay` 时报错
