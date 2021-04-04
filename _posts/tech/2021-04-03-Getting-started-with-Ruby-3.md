@@ -96,7 +96,9 @@ NoMethodError
 - 通过`extend`添加**类方法**
 - 通过`include`添加**实例方法**
 
+## 第三天自习
 
+`acts_as_csv_module_csvrow.rb`
 
-
+<div id = "includedContent_2021_04_04_20_59_4e666415"></div>
 

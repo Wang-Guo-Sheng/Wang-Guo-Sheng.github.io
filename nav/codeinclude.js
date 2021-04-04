@@ -70,3 +70,7 @@ $(function(){
     var url_2021_04_04_20_09_95fee552 = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day3/roman.html";
     $("#includedContent_2021_04_04_20_09_95fee552").load(url_2021_04_04_20_09_95fee552)
 })
+$(function(){
+    var url_2021_04_04_20_59_4e666415 = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day3/acts_as_csv_module_csvrow.html";
+    $("#includedContent_2021_04_04_20_59_4e666415").load(url_2021_04_04_20_59_4e666415)
+})
