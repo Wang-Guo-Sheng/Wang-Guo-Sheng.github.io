@@ -76,5 +76,5 @@ $(function(){
 })
 $(function(){
     var url_io_crach_week_day1_hello_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day1/hello.html";
-    $("#includedContent_io_crach_week_day1_hello_io").load(url_io_crach_week_day1_hello_io)
+    $("#includedContent_io_crash_week_day1_hello_io").load(url_io_crach_week_day1_hello_io)
 })

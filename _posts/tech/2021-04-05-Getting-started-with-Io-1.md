@@ -61,7 +61,7 @@ tags:
 
 `hello.rb`
 
-<div id = "includedContent_io_crach_week_day1_hello_io"></div>
+<div id = "includedContent_io_crash_week_day1_hello_io"></div>
 
 ----
 
