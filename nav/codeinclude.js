@@ -74,3 +74,7 @@ $(function(){
     var url_2021_04_04_20_59_4e666415 = "https://raw.githubusercontent.com/Wang-Guo-Sheng/ruby_crash_week/main/day3/acts_as_csv_module_csvrow.html";
     $("#includedContent_2021_04_04_20_59_4e666415").load(url_2021_04_04_20_59_4e666415)
 })
+$(function(){
+    var url_io_crach_week_day1_hello_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day1/hello.html";
+    $("#includedContent_io_crach_week_day1_hello_io").load(url_io_crach_week_day1_hello_io)
+})
