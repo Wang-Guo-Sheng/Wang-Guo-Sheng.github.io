@@ -16,10 +16,58 @@ tags:
 - 万物皆为消息，每条消息都会返回另一接收消息的对象。
 - 没有关键字，只有少量在行为上接近于关键字的字符。
 
-用Io的时候，你不必既操心类又操心对象。你只需和对象打交道，必要时把对象复制一下就
-行。这些被复制的对象就叫做原型。Io是我们介绍的第一门、也是仅有的一门基于原型的语言。
-在原型语言中，每个对象都不是类的复制品，而是一个实实在在的对象。此外，Io还能带你无限
-接近面向对象的Lisp。现在就对Io能否持续发挥影响力下断言尚为时过早，但简明的语法无疑是
-其成为利器的巨大优势。你将在第三天看到Io构思精妙的并发库，以及强大而优雅的消息语义。
-反射在Io当中也是无所不在。 
+## 原型编程范型
+
+-  所有事物都是`对象`； 
+- 所有与对象的交互都是`消息`； 
+- 你要做的不是实例化类，而是复制那些叫做`原型`的对象； 
+- 对象会记住它的原型，通过`proto`方法查看；
+- 对象有`槽`，通过`slotNames`方法列出； 
+- 槽包含对象（包括`方法`对象`method(...)`）； 
+- `消息`返回槽中的值，或调用槽中的方法； 
+- 如果对象无法响应某消息，则它会把该消息发送给自己的原型，溯继承树而上直到根对象。
+- 用小写字母开头命名可以`clone`出不带`type`槽的对象，类似于实例。
+
+### 命名空间
+
+- 根对象`Object`
+- 主命名空间`Lobby`，包含了所有的已命名对象
+
+## 列表和映射
+
+### 列表`List`对象
+
+复制自`List`，或者通过`Object`的方法`list`来创建。
+
+### `Map`对象
+
+相当于散列表。可以转换成对象（`asObject`）。
+
+### 单例 singleton
+
+`true`和`false`都是单例，它们的`clone`方法被重定义为返回对象本身，从而保证全局只有一个这样的对象。
+
+`nil`和`false`为假，其它都为真，0和空字符串也是真。
+
+### 一
+
+`:=`赋值，`=`改写现存对象，`::=`除了赋值以外还可以在对象中添加可通过`set_()`重设的槽。
+
+| operator | action                                                       |
+| :------- | :----------------------------------------------------------- |
+| ::=      | Creates slot, creates setter, assigns value                  |
+| :=       | Creates slot, assigns value                                  |
+| =        | Assigns value to slot if it exists, otherwise raises exception |
+
+`hello.rb`
+
+<div id = "includedContent_2021_04_08_09_34_cdb7a127"></div>
+
+----
+
+[Io 格式规范](https://en.wikibooks.org/wiki/Io_Programming/Io_Style_Guide)
+
+[Io guide](https://iolanguage.org/guide/guide.html)
+
+[Io tutorial](https://iolanguage.org/tutorial.html)
 
