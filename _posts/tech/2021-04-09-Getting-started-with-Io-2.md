@@ -60,7 +60,9 @@ To add a new operator: OperatorTable addOperator("+", 4) and implement the + mes
 To add a new assign operator: OperatorTable addAssignOperator("=", "updateSlot") and implement the updateSlot message.
 ```
 
-通过`addOperator`可以往指定优先级添加自定义的运算符。
+### 添加自定义运算符
+
+通过`addOperator`可以往指定优先级添加自定义的运算符，然后要对二元运算符左侧的可能出现的各个对象类型分别定义以该运算符为名的方法。优先级在省略括号时起作用。
 
 赋值运算符自成一表。它们会像消息那样运行。
 
@@ -74,3 +76,42 @@ To add a new assign operator: OperatorTable addAssignOperator("=", "updateSlot")
 
 消息由发送者发送至目标，然后由目标执行该消息。 
 
+用`call`方法访问*元信息*，例如：
+
+```Io
+postOffice = Object clone
+postOffice packageSender := method(call sender)
+postOffice messageTarget := method(call target)
+postOffice getMessage := method(call message)
+postOffice messageArgs := method(call message arguments)
+postOffice messageName := method(call message name)
+```
+
+直接调用`postOffice packageSender`，返回`postOffice`对象本身。
+
+在其它对象中调用`postOffice packageSender`，返回直接在其方法中包含这条调用语句的对象。
+
+调用`postOffice messageTarget`，总是返回`postOffice`对象本身。
+
+*参数*：在消息中用括号包含参数列表，`call message arguments`返回一个包含参数列表的`List`对象。
+
+#### 定义控制结构
+
+Io的对象不会先把收到消息中的参数求值后再放到栈上，而是直接把收到的整句消息发送给它的方法中调用的那个最终接受消息的对象，在后者的内部的语境中求值。
+
+利用这种特性可以定义控制语句
+
+`unless.io`
+
+
+
+## 对象反射（Object reflection）
+
+`animals.io`
+
+
+
+- Io的消息反射：获取消息的名称、发送者、目标、参数
+- Io的对象反射：获取对象的名称、原型、槽
+
+> **Reflection** is the ability of a program to manipulate variables, properties, and methods of objects at runtime. Reflection refers to the ability for code to examine attributes about objects that might be passed as parameters to a function.
