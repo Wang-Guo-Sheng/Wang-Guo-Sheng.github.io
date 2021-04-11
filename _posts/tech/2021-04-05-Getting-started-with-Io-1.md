@@ -71,3 +71,4 @@ tags:
 
 [Io tutorial](https://iolanguage.org/tutorial.html)
 
+[Io Programming Language Examples from RosettaCode.org](https://3lib.net/book/5007996/d4ee86)
