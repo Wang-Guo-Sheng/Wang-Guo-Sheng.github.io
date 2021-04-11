@@ -110,3 +110,23 @@ $(function(){
     var url_io_crash_week_day2_rand_guess_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day2/rand_guess.html";
     $("#includedContent_io_crash_week_day2_rand_guess_io").load(url_io_crash_week_day2_rand_guess_io)
 })
+$(function(){
+    var url_io_crash_week_day3_phonebook_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day3/phonebook.html";
+    $("#includedContent_io_crash_week_day3_phonebook_io").load(url_io_crash_week_day3_phonebook_io)
+})
+$(function(){
+    var url_io_crash_week_day3_coroutine_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day3/coroutine.html";
+    $("#includedContent_io_crash_week_day3_coroutine_io").load(url_io_crash_week_day3_coroutine_io)
+})
+$(function(){
+    var url_io_crash_week_day3_builder_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day3/builder.html";
+    $("#includedContent_io_crash_week_day3_builder_io").load(url_io_crash_week_day3_builder_io)
+})
+$(function(){
+    var url_io_crash_week_day3_brackets_list_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day3/brackets_list.html";
+    $("#includedContent_io_crash_week_day3_brackets_list_io").load(url_io_crash_week_day3_brackets_list_io)
+})
+$(function(){
+    var url_io_crash_week_day3_future_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day3/future.html";
+    $("#includedContent_io_crash_week_day3_future_io").load(url_io_crash_week_day3_future_io)
+})
