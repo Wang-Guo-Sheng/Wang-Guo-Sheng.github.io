@@ -78,3 +78,35 @@ $(function(){
     var url_io_crach_week_day1_hello_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day1/hello.html";
     $("#includedContent_io_crash_week_day1_hello_io").load(url_io_crach_week_day1_hello_io)
 })
+$(function(){
+    var url_io_crash_week_day2_my_average_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day2/my_average.html";
+    $("#includedContent_io_crash_week_day2_my_average_io").load(url_io_crash_week_day2_my_average_io)
+})
+$(function(){
+    var url_io_crash_week_day2_sum2d_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day2/sum2d.html";
+    $("#includedContent_io_crash_week_day2_sum2d_io").load(url_io_crash_week_day2_sum2d_io)
+})
+$(function(){
+    var url_io_crash_week_day2_unless_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day2/unless.html";
+    $("#includedContent_io_crash_week_day2_unless_io").load(url_io_crash_week_day2_unless_io)
+})
+$(function(){
+    var url_io_crash_week_day2_matrix_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day2/matrix.html";
+    $("#includedContent_io_crash_week_day2_matrix_io").load(url_io_crash_week_day2_matrix_io)
+})
+$(function(){
+    var url_io_crash_week_day2_fake_div_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day2/fake_div.html";
+    $("#includedContent_io_crash_week_day2_fake_div_io").load(url_io_crash_week_day2_fake_div_io)
+})
+$(function(){
+    var url_io_crash_week_day2_animals_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day2/animals.html";
+    $("#includedContent_io_crash_week_day2_animals_io").load(url_io_crash_week_day2_animals_io)
+})
+$(function(){
+    var url_io_crash_week_day2_fib_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day2/fib.html";
+    $("#includedContent_io_crash_week_day2_fib_io").load(url_io_crash_week_day2_fib_io)
+})
+$(function(){
+    var url_io_crash_week_day2_rand_guess_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day2/rand_guess.html";
+    $("#includedContent_io_crash_week_day2_rand_guess_io").load(url_io_crash_week_day2_rand_guess_io)
+})

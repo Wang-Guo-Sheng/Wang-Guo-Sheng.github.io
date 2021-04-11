@@ -103,15 +103,41 @@ Io的对象不会先把收到消息中的参数求值后再放到栈上，而是
 
 `unless.io`
 
-
+<div id = "includedContent_io_crash_week_day2_unless_io"></div>
 
 ## 对象反射（Object reflection）
 
 `animals.io`
 
-
+<div id = "includedContent_io_crash_week_day2_animals_io"></div>
 
 - Io的消息反射：获取消息的名称、发送者、目标、参数
 - Io的对象反射：获取对象的名称、原型、槽
 
 > **Reflection** is the ability of a program to manipulate variables, properties, and methods of objects at runtime. Reflection refers to the ability for code to examine attributes about objects that might be passed as parameters to a function.
+
+## Extra
+
+`fib.io`
+
+<div id = "includedContent_io_crash_week_day2_fib_io"></div>
+
+`fake_div.io`
+
+<div id = "includedContent_io_crash_week_day2_fake_div_io"></div>
+
+`sum2d.io`
+
+<div id = "includedContent_io_crash_week_day2_sum2d_io"></div>
+
+`my_average.io`
+
+<div id = "includedContent_io_crash_week_day2_my_average_io"></div>
+
+`matrix.io`
+
+<div id = "includedContent_io_crash_week_day2_matrix_io"></div>
+
+`rand_guess.io`
+
+<div id = "includedContent_io_crash_week_day2_rand_guess_io"></div>
