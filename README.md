@@ -15,5 +15,10 @@ This is a blog.
 
 ----
 
-* The `Jekyll` theme used in this site is designed by [liberxue](liberxue.github.io).
+`Jekyll` theme modified from [liberxue](liberxue.github.io).
 
+### TODO
+
+- [ ] Organize `codeinclude.js`
+- [ ] Test RSS feed
+- [ ] Fix footer links
