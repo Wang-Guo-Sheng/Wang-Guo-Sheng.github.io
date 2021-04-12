@@ -130,3 +130,23 @@ $(function(){
     var url_io_crash_week_day3_future_io = "https://raw.githubusercontent.com/Wang-Guo-Sheng/io_crash_week/main/day3/future.html";
     $("#includedContent_io_crash_week_day3_future_io").load(url_io_crash_week_day3_future_io)
 })
+$(function(){
+    var url_prolog_crash_week_day1_friends_pro = "https://raw.githubusercontent.com/Wang-Guo-Sheng/prolog_crash_week/main/day1/friends.html";
+    $("#includedContent_prolog_crash_week_day1_friends_pro").load(url_prolog_crash_week_day1_friends_pro)
+})
+$(function(){
+    var url_prolog_crash_week_day1_authors_pro = "https://raw.githubusercontent.com/Wang-Guo-Sheng/prolog_crash_week/main/day1/authors.html";
+    $("#includedContent_prolog_crash_week_day1_authors_pro").load(url_prolog_crash_week_day1_authors_pro)
+})
+$(function(){
+    var url_prolog_crash_week_day1_food_pro = "https://raw.githubusercontent.com/Wang-Guo-Sheng/prolog_crash_week/main/day1/food.html";
+    $("#includedContent_prolog_crash_week_day1_food_pro").load(url_prolog_crash_week_day1_food_pro)
+})
+$(function(){
+    var url_prolog_crash_week_day1_map_pro = "https://raw.githubusercontent.com/Wang-Guo-Sheng/prolog_crash_week/main/day1/map.html";
+    $("#includedContent_prolog_crash_week_day1_map_pro").load(url_prolog_crash_week_day1_map_pro)
+})
+$(function(){
+    var url_prolog_crash_week_day1_ohmy_pro = "https://raw.githubusercontent.com/Wang-Guo-Sheng/prolog_crash_week/main/day1/ohmy.html";
+    $("#includedContent_prolog_crash_week_day1_ohmy_pro").load(url_prolog_crash_week_day1_ohmy_pro)
+})
