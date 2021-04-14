@@ -7,30 +7,120 @@
     <atom:link href="https://github.wguosh.cn/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>鲁迅博物馆记游兼怀故事</title>
-        <category>路途</category>
-        <description>为了让一两天的闲暇显得更长一些，多换一些场景，到远处的某个房间看一断记忆生疏了的历史，走在路上，体察几个新的视角，人间的事情便仿佛焕发着异彩地重现到眼前。总是晴天的地方，凉风顺着城墙跟下时断时续...</description>
-        <pubDate>2019-10-31 00:00:00 </pubDate>
-        <link>https://github.wguosh.cn/2019/10/31/luxun-museum.html</link>
-        <guid isPermaLink="true">https://github.wguosh.cn/2019/10/31/luxun-museum.html</guid>
+        <title>Katex测试</title>
+        <category>致理</category>
+        <description>            Inline math $\frac{\partial\left      \Psi\right&gt;}{\partial t}=-\mathbf{i}\hbar\Ps...</description>
+        <pubDate>2021-04-14 21:40:00 </pubDate>
+        <link>https://github.wguosh.cn/2021/04/14/Katex%E6%B5%8B%E8%AF%95.html</link>
+        <guid isPermaLink="true">https://github.wguosh.cn/2021/04/14/Katex%E6%B5%8B%E8%AF%95.html</guid>
       </item>
     
       <item>
-        <title>Manjaro 系统 VASP 编译简记</title>
+        <title>Getting started with Haskell-1</title>
         <category>技术</category>
-        <description>编译于2019年9月23日，VASP版本5.4.4。根据sobereva给出的CentOS7上的编译过程改写，请参考原帖。安装 Intel 编译器下载的版本是 parallel_studio_x...</description>
-        <pubDate>2019-09-29 00:00:00 </pubDate>
-        <link>https://github.wguosh.cn/2019/09/29/manjarovaspcompilation.html</link>
-        <guid isPermaLink="true">https://github.wguosh.cn/2019/09/29/manjarovaspcompilation.html</guid>
+        <description>函数式  只有函数没有对象；  通常来说，给定相同输入，这些函数将返回相同的值；  这些函数通常没有副作用，也就是说，它们不改变程序的状态；  任何变量都只能赋值一次。Haskell  上句结果...</description>
+        <pubDate>2021-04-14 20:42:00 </pubDate>
+        <link>https://github.wguosh.cn/2021/04/14/Getting-started-with-Haskell-1.html</link>
+        <guid isPermaLink="true">https://github.wguosh.cn/2021/04/14/Getting-started-with-Haskell-1.html</guid>
       </item>
     
       <item>
-        <title>试验博客：fcitx搜狗输入法提示栏恢复</title>
+        <title>Ploty iplot KeyError: proxy_username</title>
         <category>技术</category>
-        <description>以此旧文测试博客功能。fcitx下恢复搜狗输入法提示栏关闭进程重启ps aux | grep sogou-qimpanelkillsogou-qimpanel单行命令kill $(ps aux ...</description>
-        <pubDate>2019-09-27 00:00:00 </pubDate>
-        <link>https://github.wguosh.cn/2019/09/27/sogoufix.html</link>
-        <guid isPermaLink="true">https://github.wguosh.cn/2019/09/27/sogoufix.html</guid>
+        <description>新装的plotly使用iplot方法时报错：KeyError: proxy_username来自proxy_auth = basic_auth(creds["proxy_username"], ...</description>
+        <pubDate>2021-04-13 21:05:00 </pubDate>
+        <link>https://github.wguosh.cn/2021/04/13/Ploty-iplot-KeyError-proxy_username.html</link>
+        <guid isPermaLink="true">https://github.wguosh.cn/2021/04/13/Ploty-iplot-KeyError-proxy_username.html</guid>
+      </item>
+    
+      <item>
+        <title>Getting started with Prolog-2</title>
+        <category>技术</category>
+        <description>递归与通常的命令式语言相对，Prolog是声明式的。声明式语言处理集合时更多用递归而非迭代。实现递归的方法是，在一个规则中包含若干子目标，其中一个子目标是该规则本身，这个子目标就成为递归子目标。...</description>
+        <pubDate>2021-04-12 18:41:00 </pubDate>
+        <link>https://github.wguosh.cn/2021/04/12/Getting-started-with-Prolog-2.html</link>
+        <guid isPermaLink="true">https://github.wguosh.cn/2021/04/12/Getting-started-with-Prolog-2.html</guid>
+      </item>
+    
+      <item>
+        <title>软绿</title>
+        <category>梦呓</category>
+        <description>清明过后，或有将雨不雨的阴沉日，路上密密层层的新绿堆满了楼前路鬓，都因着连日的黯淡天气，恹恹地透出鹅黄的色彩。引擎耸耸地扑出水汽，地面打湿的一片暗色表明着冰封的冬季的已经远去，而又以厚重棉袄的不...</description>
+        <pubDate>2021-04-12 15:57:00 </pubDate>
+        <link>https://github.wguosh.cn/2021/04/12/%E8%BD%AF%E7%BB%BF.html</link>
+        <guid isPermaLink="true">https://github.wguosh.cn/2021/04/12/%E8%BD%AF%E7%BB%BF.html</guid>
+      </item>
+    
+      <item>
+        <title>Getting started with Prolog-1</title>
+        <category>技术</category>
+        <description>概况语法结构  句末加点| ?- write('Hello,'), nl, write('world').Hello,worldyes| ?- halt.4 种元素（term）：  atom  ...</description>
+        <pubDate>2021-04-11 18:51:00 </pubDate>
+        <link>https://github.wguosh.cn/2021/04/11/Getting-started-with-Prolog-1.html</link>
+        <guid isPermaLink="true">https://github.wguosh.cn/2021/04/11/Getting-started-with-Prolog-1.html</guid>
+      </item>
+    
+      <item>
+        <title>Getting started with Io-3</title>
+        <category>技术</category>
+        <description>Object原型包含了处理消息传递的一切行为。当你把消息发送给对象的时候，对象将完成下列事情： (1) 计算所有参数，这些参数其实就是消息； (2) 获取消息的名称、目标和发送者； (3) 尝试...</description>
+        <pubDate>2021-04-11 10:55:00 </pubDate>
+        <link>https://github.wguosh.cn/2021/04/11/Getting-started-with-Io-3.html</link>
+        <guid isPermaLink="true">https://github.wguosh.cn/2021/04/11/Getting-started-with-Io-3.html</guid>
+      </item>
+    
+      <item>
+        <title>Getting started with Io-2</title>
+        <category>技术</category>
+        <description>如何用Io的槽和消息构造核心行为。控制流循环  loop(&lt;...&gt;)  while(i &lt;= stop, &lt;...&gt;, i += step)  for(i, st...</description>
+        <pubDate>2021-04-09 14:34:00 </pubDate>
+        <link>https://github.wguosh.cn/2021/04/09/Getting-started-with-Io-2.html</link>
+        <guid isPermaLink="true">https://github.wguosh.cn/2021/04/09/Getting-started-with-Io-2.html</guid>
+      </item>
+    
+      <item>
+        <title>Getting started with Io-1</title>
+        <category>技术</category>
+        <description>  基于原型编程（prototype-based programming）或称为原型程序设计、原型编程，是面向对象编程的子系统和一种方式。行为重用（继承）是通过复制已经存在的原型对象实现的。或称...</description>
+        <pubDate>2021-04-05 21:05:00 </pubDate>
+        <link>https://github.wguosh.cn/2021/04/05/Getting-started-with-Io-1.html</link>
+        <guid isPermaLink="true">https://github.wguosh.cn/2021/04/05/Getting-started-with-Io-1.html</guid>
+      </item>
+    
+      <item>
+        <title>齐泽克导读（一）从南斯拉夫到斯洛文尼亚</title>
+        <category>读书</category>
+        <description>从南斯拉夫到斯洛文尼亚这一章讲南斯拉夫国家的形成、运转和解体，以及西方如何在东欧重新发明资本主义。怎样理解这一过程，怎样看待铁托的崛起与没落、自治社会主义、民族主义抵抗以及新的自由市场道德多数，...</description>
+        <pubDate>2021-04-04 06:40:00 </pubDate>
+        <link>https://github.wguosh.cn/2021/04/04/%E9%BD%90%E6%B3%BD%E5%85%8B%E5%AF%BC%E8%AF%BB-%E4%B8%80-%E4%BB%8E%E5%8D%97%E6%96%AF%E6%8B%89%E5%A4%AB%E5%88%B0%E6%96%AF%E6%B4%9B%E6%96%87%E5%B0%BC%E4%BA%9A.html</link>
+        <guid isPermaLink="true">https://github.wguosh.cn/2021/04/04/%E9%BD%90%E6%B3%BD%E5%85%8B%E5%AF%BC%E8%AF%BB-%E4%B8%80-%E4%BB%8E%E5%8D%97%E6%96%AF%E6%8B%89%E5%A4%AB%E5%88%B0%E6%96%AF%E6%B4%9B%E6%96%87%E5%B0%BC%E4%BA%9A.html</guid>
+      </item>
+    
+      <item>
+        <title>Getting started with Ruby-3</title>
+        <category>技术</category>
+        <description>元编程  用Ruby自定义语法      动态地改变类    既便于解释器，又便于人类阅读理解。BuilderActiveRecord开放类在某个类名上首次调用class会定义一个类；但如果该类...</description>
+        <pubDate>2021-04-03 20:26:00 </pubDate>
+        <link>https://github.wguosh.cn/2021/04/03/Getting-started-with-Ruby-3.html</link>
+        <guid isPermaLink="true">https://github.wguosh.cn/2021/04/03/Getting-started-with-Ruby-3.html</guid>
+      </item>
+    
+      <item>
+        <title>Git clone OpenSSL 错误</title>
+        <category>技术</category>
+        <description>更新 yay 时报错fatal: 无法访问 'https://aur.archlinux.org/linuxqq.git/'：OpenSSL SSL_connect: SSL_ERROR_SYS...</description>
+        <pubDate>2021-04-03 03:57:00 </pubDate>
+        <link>https://github.wguosh.cn/2021/04/03/Git-clone-OpenSSL-%E9%94%99%E8%AF%AF.html</link>
+        <guid isPermaLink="true">https://github.wguosh.cn/2021/04/03/Git-clone-OpenSSL-%E9%94%99%E8%AF%AF.html</guid>
+      </item>
+    
+      <item>
+        <title>静驻</title>
+        <category>梦呓</category>
+        <description>时间的向前运动仿佛隆隆的汽车引擎声音一般令人烦躁。你静坐在深夜的书斋里，试图躲过一切烦躁心情，可是却无时无刻不在每一寸躯干感受到时间的流驶。一切都很完美，适意的感觉登峰造极，似乎无事可做，似乎做...</description>
+        <pubDate>2021-04-03 02:09:00 </pubDate>
+        <link>https://github.wguosh.cn/2021/04/03/%E9%9D%99%E9%A9%BB.html</link>
+        <guid isPermaLink="true">https://github.wguosh.cn/2021/04/03/%E9%9D%99%E9%A9%BB.html</guid>
       </item>
     
   </channel>
