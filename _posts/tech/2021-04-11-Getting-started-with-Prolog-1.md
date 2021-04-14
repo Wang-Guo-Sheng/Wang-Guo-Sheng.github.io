@@ -41,7 +41,7 @@ yes
 三种基本结构：
 
 - 数据库(knowledge base/database)
-    - 事实(facts)
+    - 事实(facts)，谓词（predicate）
     - 规则(rules)
 - 查询(queries)
 
