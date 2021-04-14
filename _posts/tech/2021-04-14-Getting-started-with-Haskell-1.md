@@ -3,12 +3,11 @@ layout: blog
 istop: false
 tech: true
 title: "Getting started with Haskell-1"
-background-image: http://www.gprolog.org/gprolog.png
+background-image: https://wiki.haskell.org/wikiupload/4/4a/HaskellLogoStyPreview-1.png
 date: 2021-04-14 20:42
 category: 技术
 tags:
 - haskell
-
 ---
 
 *函数式*
