@@ -48,7 +48,7 @@ $$
 
 #### Variation form
 
-Suppose *q*(*t*) is a path realizing an extremum of *S*. Consider a variation *δq*(*t*) of the trajectory such that *δq*(*t*~i~) = *δq*(*t*~f~) = 0. Under this variation,
+Suppose *q*(*t*) is a path realizing an extremum of *S*. Consider a variation *δq*(*t*) of the trajectory such that $\delta q(t_i) = \delta q(t_f) = 0$. Under this variation,
 $$
 \begin{equation}
 \begin{split}
@@ -63,7 +63,7 @@ $$
             + \mathcal{O}(\delta q^2)\\
             &\approx \int_{t_i}^{t_f}\delta q\ \mathrm{d}t\ \left(\frac{\partial L}{\partial q}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{q}}\right).
 \end{split}
-\end{equation}\tag{1.4}
+\end{equation}%\tag{1.4}
 $$
 
 ### Euler-Lagrange equation
@@ -124,7 +124,7 @@ $$
 
 In this flavor the Euler-Lagrangian Equation may be written as
 $$
-\frac{\partial L}{\partial q}(s) = \frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial\dot{q}}(s)\tag{1.12}
+\frac{\partial L}{\partial q}(s) = \frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial\dot{q}}(s)%\tag{1.12}
 $$
 
 ### Symmetry of Lagrangian
