@@ -174,3 +174,14 @@ Remarks:
 
 
 ## Hamiltonian formalism
+
+Hamiltonian is the Legendre transformation of the Lagrangian
+$$
+\tag{eq:Hd}
+H(q,p):=\sum_k p_k\dot{q}_k - L(q,\dot{q}),
+$$
+
+
+# References
+
+1. Nakahara, Mikio. *Geometry, Topology, and Physics*. 2nd ed. Graduate Student Series in Physics. Bristol ; Philadelphia: Institute of Physics Publishing, 2003.
