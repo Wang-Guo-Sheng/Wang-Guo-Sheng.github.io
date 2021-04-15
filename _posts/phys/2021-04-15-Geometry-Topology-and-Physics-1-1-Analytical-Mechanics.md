@@ -53,12 +53,17 @@ $$
 \begin{equation}
 \begin{split}
 \delta S &= \int_{t_i}^{t_f} L(q+\delta q, \dot{q}+\delta \dot{q}) - L(q, \dot{q}) \mathrm{d}t\\
-            &= \int_{t_i}^{t_f}\frac{\partial L}{\partial q}\delta q\mathrm{d}t+\int_{t_i}^{t_f}\frac{\partial L}{\partial \dot{q}}\delta \dot{q}\mathrm{d}t\\
-            &= \int_{t_i}^{t_f}\frac{\partial L}{\partial q}\delta q\mathrm{d}t+\int_{t_i}^{t_f}\frac{\partial L}{\partial \dot{q}}\mathrm{d}\delta q\\
-            &= \int_{t_i}^{t_f}\frac{\partial L}{\partial q}\delta q\mathrm{d}t-\int_{t_i}^{t_f}\delta q\mathrm{d}\frac{\partial L}{\partial \dot{q}}\\
-            &= \int_{t_i}^{t_f}\delta q\ \mathrm{d}t\ \left(\frac{\partial L}{\partial q}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{q}}\right).
+            &= \int_{t_i}^{t_f}\frac{\partial L}{\partial q}\delta q\mathrm{d}t+\int_{t_i}^{t_f}\frac{\partial L}{\partial \dot{q}}\delta \dot{q}\mathrm{d}t
+            + \mathcal{O}(\delta q^2) + \mathcal{O}(\delta \dot{q}^2)\\
+            &= \int_{t_i}^{t_f}\frac{\partial L}{\partial q}\delta q\mathrm{d}t+\int_{t_i}^{t_f}\frac{\partial L}{\partial \dot{q}}\mathrm{d}\delta q
+            + \mathcal{O}(\delta q^2)\\
+            &= \int_{t_i}^{t_f}\frac{\partial L}{\partial q}\delta q\mathrm{d}t-\int_{t_i}^{t_f}\delta q\mathrm{d}\frac{\partial L}{\partial \dot{q}}
+            + \mathcal{O}(\delta q^2)\\
+            &= \int_{t_i}^{t_f}\delta q\ \mathrm{d}t\ \left(\frac{\partial L}{\partial q}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{q}}\right)
+            + \mathcal{O}(\delta q^2)\\
+            &\approx \int_{t_i}^{t_f}\delta q\ \mathrm{d}t\ \left(\frac{\partial L}{\partial q}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{q}}\right).
 \end{split}
-\end{equation}
+\end{equation}\tag{1.4}
 $$
 
 ### Euler-Lagrange equation
@@ -78,29 +83,66 @@ Substituting $L=\frac{1}{2}m\dot{q}^2-V(q)$, this reduces to $p = m\dot{q},\ m\d
 
 ### Functional derivative
 
-Using a single degree of freedom *s*, the parameter of the configuration trajectory, a **functional derivative**, considering the variation from *q*(*s*) to *q*(*t*), can be defined by
+Using a single degree of freedom *s* or *t*, the parameter of the configuration trajectory, a **functional derivative**, considering the variation from the stationary path *q*(*s*) to another path *q*(*t*), can be defined by
 
 $$
 \begin{equation}
 \begin{split}
-\frac{S[q,\dot{q}]}{\delta q(s)}:
+\frac{\delta S[q,\dot{q}]}{\delta q(s)}:
 &=\lim_{\varepsilon\to 0}\frac{1}{\varepsilon}
-    \left\{S[q(s),\dot{q}(s)]-S[q(t),\dot{q}(t)]\right\}\\
+    \left\{S[q(t),\dot{q}(t)]-S[q(s),\dot{q}(s)]\right\}\\
 &=\lim_{\varepsilon\to 0}\frac{1}{\varepsilon}
     \left\{
-        S[q(t)+\varepsilon\delta(t-s),
-    	\dot{q}(t)+\varepsilon\frac{\mathrm{d}}
+        S[q(s)+\varepsilon\delta(t-s),
+    	\dot{q}(s)+\varepsilon\frac{\mathrm{d}}
     		{\mathrm{d}t}\delta(t-s)]
-        -S[q(t),\dot{q}(t)]
+        -S[q(s),\dot{q}(s)]
     \right\},
 \end{split}
 \end{equation}
 $$
 
-where $\varepsilon\delta(t-s)$ is a parametric expression of $\delta q$.
+where $\varepsilon\delta(t-s)$ is a parametric expression of $\delta q$. $\varepsilon$ can be thought of a distance in configuration space between the two trajectories *q*(*s*), *q*(*t*), where they have parameter values of *s* and *t*, and $\delta(t-s)$ the *unit vector* pointing from point *q*(*s*) to point *q*(*t*). Note that the *s* and *t* here represent not a single value of the parameter (time), but the whole process of them ranging from the initial to the final state.
 
-Substituting the results for $\delta S$
+Therefore, substituting $\delta q=\varepsilon\delta(t-s)$ into (1.4) yields
 
+$$
+\begin{equation}
+\begin{split}
+\delta S
+&= \int_{t_i}^{t_f}\mathrm{d}t\ \varepsilon\ 
+    \left(
+        \frac{\partial L}{\partial q}(s)
+        -\frac{\mathrm{d}}{\mathrm{d}t}
+        \frac{\partial L}{\partial \dot{q}}(s)
+    \right)
+    \delta(t-s)
+    + \mathcal{O}(\varepsilon^2).
+\end{split}
+\end{equation}
+$$
+
+In this flavor the Euler-Lagrangian Equation may be written as
+$$
+\frac{\partial L}{\partial q}(s) = \frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial\dot{q}}(s)\tag{1.12}
+$$
+
+### Symmetry of Lagrangian
+
+#### Cyclic coordinate and momentum conservation
+
+If Lagrangian *L* is independent of *q~k~* (but not $\dot{q}_k$), then *q~k~* is called **cyclic**. The conjugating momentum is conserved, according to (1.12).
+
+#### Symmetry
+
+Infinitesimal symmetry operation: $q_k(t)\to q_k(t)+\delta q_k(t)$ on the path $q_k(t)$ from *t*~i~ till *t*~f~.  Since *L* is independent of *q~k~*, this Lagrangian should remain constant under the operation, at any point of the path.
+
+For a particle in a spherically symmetric potential, the longitude angle $\phi$ is a cyclic coordinate. The corresponding conservative momentum is the angular momentum around the *z* axis.
+
+Remarks:
+
+- $L$ is equivalent to $L+\frac{\mathrm{d}Q}{\mathrm{d}t}\ \forall\ Q=Q(q)$.
+- Newtonian mechanics is realized as an extremum of the action, but the action itself is defined on any path in the configuration space.
 
 
 ## Hamiltonian formalism
