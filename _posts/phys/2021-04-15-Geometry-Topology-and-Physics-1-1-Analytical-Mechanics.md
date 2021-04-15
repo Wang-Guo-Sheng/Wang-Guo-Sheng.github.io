@@ -19,6 +19,7 @@ tags:
 A conserved force is the gradient of a scalar function: $\mathbf{F}=-\nabla V(\mathbf{x})$.
 
 Energy of a system only with conserved forces is conserved:
+
 $$
 \begin{equation}
 E = \frac{m}{2}\left(\frac{\mathrm{d}\mathbf{x}}{\mathrm{d}t}\right)^2
@@ -29,6 +30,7 @@ E = \frac{m}{2}\left(\frac{\mathrm{d}\mathbf{x}}{\mathrm{d}t}\right)^2
 $$
 
 Any one-dimensional force *F*(*x*) only explicitly dependent on *x* is conserved:
+
 $$
 \begin{equation}
 V(x) = -\int^x F(\xi) \mathrm{d}\xi.
@@ -58,6 +60,7 @@ $$
 #### Variation form
 
 Suppose *q*(*t*) is a path realizing an extremum of *S*. Consider a variation *δq*(*t*) of the trajectory such that $\delta q(t_i) = \delta q(t_f) = 0$. Under this variation,
+
 $$
 \begin{equation}
 \begin{split}
@@ -79,15 +82,18 @@ $$
 ### Euler-Lagrange equation
 
 *q*(*t*) is an extremum, so $\delta S=0\ \forall\ \delta q$, which implies
+
 $$
 \begin{equation}
 \frac{\partial L}{\partial q_k}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{q}_k}=0\quad \text{for }k=1,\cdots,N,
 \tag{eq:ELE}
 \end{equation}
 $$
+
 which is the **Euler-Lagrange equation**.
 
 Using **generalized momentum** $p=\dfrac{\partial L}{\partial \dot{q}}$,
+
 $$
 \begin{equation}
 \frac{\partial L}{\partial q_k}=\frac{\mathrm{d}p_k}{\mathrm{d}t}.
@@ -141,6 +147,7 @@ $$
 $$
 
 In this flavor the Euler-Lagrangian Equation may be written as
+
 $$
 \begin{equation}
 \frac{\partial L}{\partial q}(s) = \frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial\dot{q}}(s)
