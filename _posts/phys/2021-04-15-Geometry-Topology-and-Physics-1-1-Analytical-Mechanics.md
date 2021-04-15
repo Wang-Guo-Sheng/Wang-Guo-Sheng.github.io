@@ -50,6 +50,7 @@ $$
 
 Suppose *q*(*t*) is a path realizing an extremum of *S*. Consider a variation *δq*(*t*) of the trajectory such that *δq*(*t*~i~) = *δq*(*t*~f~) = 0. Under this variation,
 $$
+\begin{equation}
 \begin{split}
 \delta S &= \int_{t_i}^{t_f} L(q+\delta q, \dot{q}+\delta \dot{q}) - L(q, \dot{q}) \mathrm{d}t\\
             &= \int_{t_i}^{t_f}\frac{\partial L}{\partial q}\delta q\mathrm{d}t+\int_{t_i}^{t_f}\frac{\partial L}{\partial \dot{q}}\delta \dot{q}\mathrm{d}t\\
@@ -57,9 +58,10 @@ $$
             &= \int_{t_i}^{t_f}\frac{\partial L}{\partial q}\delta q\mathrm{d}t-\int_{t_i}^{t_f}\delta q\mathrm{d}\frac{\partial L}{\partial \dot{q}}\\
             &= \int_{t_i}^{t_f}\delta q\ \mathrm{d}t\ \left(\frac{\partial L}{\partial q}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{q}}\right).
 \end{split}
+\end{equation}
 $$
 
-#### Euler-Lagrange equation
+### Euler-Lagrange equation
 
 *q*(*t*) is an extremum, so $\delta S=0\ \forall\ \delta q$, which implies
 $$
@@ -73,6 +75,31 @@ $$
 $$
 
 Substituting $L=\frac{1}{2}m\dot{q}^2-V(q)$, this reduces to $p = m\dot{q},\ m\ddot{q}+\frac{\partial V}{\partial q}=0$.
+
+### Functional derivative
+
+Using a single degree of freedom *s*, the parameter of the configuration trajectory, a **functional derivative**, considering the variation from *q*(*s*) to *q*(*t*), can be defined by
+
+$$
+\begin{equation}
+\begin{split}
+\frac{S[q,\dot{q}]}{\delta q(s)}:
+&=\lim_{\varepsilon\to 0}\frac{1}{\varepsilon}
+    \left\{S[q(s),\dot{q}(s)]-S[q(t),\dot{q}(t)]\right\}\\
+&=\lim_{\varepsilon\to 0}\frac{1}{\varepsilon}
+    \left\{
+        S[q(t)+\varepsilon\delta(t-s),
+    	\dot{q}(t)+\varepsilon\frac{\mathrm{d}}
+    		{\mathrm{d}t}\delta(t-s)]
+        -S[q(t),\dot{q}(t)]
+    \right\},
+\end{split}
+\end{equation}
+$$
+
+where $\varepsilon\delta(t-s)$ is a parametric expression of $\delta q$.
+
+Substituting the results for $\delta S$
 
 
 
