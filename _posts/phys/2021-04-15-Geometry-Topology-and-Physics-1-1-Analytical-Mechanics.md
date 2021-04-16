@@ -176,6 +176,7 @@ Remarks:
 ## Hamiltonian formalism
 
 Hamiltonian is the Legendre transformation of the Lagrangian
+
 $$
 \tag{eq:Hd}
 H(q,p):=\sum_k p_k\dot{q}_k - L(q,\dot{q}),
