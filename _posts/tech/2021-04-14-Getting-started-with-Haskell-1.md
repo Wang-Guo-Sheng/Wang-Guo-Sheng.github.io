@@ -26,6 +26,7 @@ tags:
 - 在ghci中运行模块：`:load <name>.hs`，`:l <name>.hs`；再用`:m`退出
 - 退出ghci：`:quit`
 - 注释单行`--<comments>`，多行`{-comments-}`
+- 变量名必须小写开头
 
 ### 字符串
 
@@ -67,3 +68,39 @@ Haskell依靠尾递归优化高效地处理递归。
 
 `fact_with_guard.hs`
 
+- 用点号复合两个函数。
+- 三元表达式是`if`，`then`，`else`
+
+## 元组和列表
+
+- 列表是同质的，元素类型必须相同。
+- 元组可以包含不同类型。
+- 通过冒号把元素添加到列表首位。
+- 通过冒号匹配Head/Tail
+
+```haskell
+Prelude> let h:t = [1,2,3]
+Prelude> h
+1
+Prelude> t
+[2,3]
+```
+- 遍历：用Head/Tail匹配递归
+
+`lists.hs`
+
+- `zip`两个列表得到二元组的列表，长度是较短列表的长度。
+- 两点表示范围（如`[1..10]`，`[1,3..9]`）。
+
+- 列表生成式：如`[ (a, b) | a <- crew, b<- crew, a < b]`。
+
+## Extra
+
+`my_reverse.hs`
+
+`combination.hs`
+
+`multiplication_table.hs`
+
+ `map.hs`
+ 
