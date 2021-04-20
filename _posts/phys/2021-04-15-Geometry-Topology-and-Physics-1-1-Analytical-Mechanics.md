@@ -304,11 +304,11 @@ $$
 \begin{split}
 \frac{\partial q_i'}{\partial q_j}
     &= \frac{\partial}{\partial q_j}\left[q_i+\varepsilon f_i(q)\right]
-    &= \delta_{ij} + \varepsilon\frac{\partial f_i(q)}{\partial q_j}
+    = \delta_{ij} + \varepsilon\frac{\partial f_i(q)}{\partial q_j}
         + \mathcal{O}(\varepsilon ^2),\\
 \frac{\partial q_i}{\partial q_j'}
     &= \frac{\partial}{\partial q_j'}\left[q_i'-\varepsilon f_i(q)\right]
-    &= \delta_{ij} - \varepsilon\frac{\partial f_i(q)}{\partial q_j'}
+    = \delta_{ij} - \varepsilon\frac{\partial f_i(q)}{\partial q_j'}
     + \mathcal{O}(\varepsilon ^2),
 \end{split}
 \tag{eq:Lij}
