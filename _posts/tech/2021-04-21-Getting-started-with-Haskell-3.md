@@ -41,7 +41,7 @@ tags:
 
 继承：类中定义若干函数，如果一个类型支持其中的函数，则该*类型*是类的一个实例，类中的其它函数也被提供给该类型。
 
-![重要的Haskell类](../../style/img/md/haskell_builtin_class_inheritance.png)
+![重要的Haskell类](/style/img/md/haskell_builtin_class_inheritance.png)
 
 ## monad
 
