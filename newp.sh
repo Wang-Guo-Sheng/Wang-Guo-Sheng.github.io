@@ -6,7 +6,9 @@
 currdir=`pwd`
 rootdir=${0%/*}
 cd ${rootdir}
+echo "Pulling..."
 git pull --ff-only
+echo "Opening new post..."
 
 title=$2
 imgurl=$3
