@@ -6,7 +6,7 @@
 currdir=`pwd`
 rootdir=${0%/*}
 cd ${rootdir}
-git pull -ff-only
+git pull --ff-only
 
 title=$2
 imgurl=$3
