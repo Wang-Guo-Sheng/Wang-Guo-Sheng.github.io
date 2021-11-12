@@ -50,25 +50,27 @@ filetitle="${title// /-}"
 fbasename="${filedate}-${filetitle}"
 postpath="${0%/*}/_posts/${page}/${fbasename}.md"
 
-yaml=("---"
-    "layout: blog"
-    "istop: false"
-    "${page}: true"
-    "title: \"${title}\""
-    "background-image: \"${imgurl}\""
-    "date: ${datetime}"
-    "category: ${categ}"
-    "tags:")
+if [ ! -f $postpath ]; then
+    yaml=("---"
+        "layout: blog"
+        "istop: false"
+        "${page}: true"
+        "title: \"${title}\""
+        "background-image: \"${imgurl}\""
+        "date: ${datetime}"
+        "category: ${categ}"
+        "tags:")
 
-for tag in ${tags[@]}; do
-    yaml=("${yaml[@]}" "- ${tag}")
-done
+    for tag in ${tags[@]}; do
+        yaml=("${yaml[@]}" "- ${tag}")
+    done
 
-yaml=("${yaml[@]}" "---")
+    yaml=("${yaml[@]}" "---")
 
-for y in "${yaml[@]}"; do
-    echo ${y} | tee -a ${postpath}
-done
+    for y in "${yaml[@]}"; do
+        echo ${y} | tee -a ${postpath}
+    done
+fi
 
 smerge ${rootdir}
 xdg-open ${postpath}
