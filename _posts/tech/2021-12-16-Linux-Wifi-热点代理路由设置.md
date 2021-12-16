@@ -23,7 +23,7 @@ tags:
 - 用`ip link show`查看热点的网络接口名称。
 
 $$
-\mbox{Internet}\xrightarrow{\mbox{wlp2s0}}\mbox{PC}\xrightarrow{\mbox{ap0}}\mbox{Hotspot}
+\text{Internet}\xrightarrow{\text{wlp2s0}}\text{PC}\xrightarrow{\text{ap0}}\text{Hotspot}
 $$
 
 - PC打开`clashy`代理
