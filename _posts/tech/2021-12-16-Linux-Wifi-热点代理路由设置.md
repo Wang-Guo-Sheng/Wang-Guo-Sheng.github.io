@@ -19,7 +19,7 @@ tags:
 
 ## 设置热点
 
-- PC连接到Wifi；在PC上用`linux-wifi-hotspot`设置一个Wifi热点连接点，手机连接到热点，测试到无需代理的网站的连接。
+- PC连接到Wifi；在PC上用[`linux-wifi-hotspot`](https://github.com/lakinduakash/linux-wifi-hotspot)设置一个Wifi热点连接点，手机连接到热点，测试到无需代理的网站的连接。
 - 用`ip link show`查看热点的网络接口名称。
 
 $$
@@ -127,3 +127,6 @@ iptables-restore < ~/backup/iptables
 ip6tables-restore < ~/backup/ip6tables
 ```
 
+## 参见
+- [jmkhael.io](https://jmkhael.io/escape-proxy-hell-with-redsocks/)
+- [camelcc.com](https://www.camelcc.com/posts/rpi-hotspot-sock-proxy/)
