@@ -3,6 +3,13 @@
 # Example:
 # newp book "The Time of the Heroes" "https://asiasuptour.org/wp-content/uploads/2019/10/placeholder.png" llosa barsas
 
+currdir=`pwd`
+rootdir=${0%/*}
+cd ${rootdir}
+echo "Pulling..."
+git pull --ff-only
+echo "Opening new post..."
+
 title=$2
 imgurl=$3
 tags=${@:4:99}
@@ -41,26 +48,30 @@ datetime=`date +%Y-%m-%d\ %H:%M`
 filedate=`date -d "${datetime}" +%Y-%m-%d`
 filetitle="${title// /-}"
 fbasename="${filedate}-${filetitle}"
-postpath="./_posts/${page}/${fbasename}.md"
+postpath="${0%/*}/_posts/${page}/${fbasename}.md"
 
-yaml=("---"
-    "layout: blog"
-    "istop: false"
-    "${page}: true"
-    "title: \"${title}\""
-    "background-image: \"${imgurl}\""
-    "date: ${datetime}"
-    "category: ${categ}"
-    "tags:")
+if [ ! -f $postpath ]; then
+    yaml=("---"
+        "layout: blog"
+        "istop: false"
+        "${page}: true"
+        "title: \"${title}\""
+        "background-image: \"${imgurl}\""
+        "date: ${datetime}"
+        "category: ${categ}"
+        "tags:")
 
-for tag in ${tags[@]}; do
-    yaml=("${yaml[@]}" "- ${tag}")
-done
+    for tag in ${tags[@]}; do
+        yaml=("${yaml[@]}" "- ${tag}")
+    done
 
-yaml=("${yaml[@]}" "---")
+    yaml=("${yaml[@]}" "---")
 
-for y in "${yaml[@]}"; do
-    echo ${y} | tee -a ${postpath}
-done
+    for y in "${yaml[@]}"; do
+        echo ${y} | tee -a ${postpath}
+    done
+fi
 
+smerge ${rootdir}
 xdg-open ${postpath}
+cd ${currdir}
