@@ -54,3 +54,10 @@ mount: /run/media/<USERNAME>/Vol2/: 文件系统类型错误、选项错误、/d
 - [SE](https://unix.stackexchange.com/questions/241499/how-do-i-handle-linux-raid0-and-windows-striped-dynamic-volumes-on-the-same-set)
 - [mikas](https://michael-prokop.at/blog/2013/02/18/ldmtool-accessing-microsoft-windows-dynamic-disks-from-linux/)
 
+----
+
+## Edit:
+
+本来要拷到另一块磁盘上，拷到一半的时候发现那块磁盘格式化选成了FAT32，结果4GB以上文件拷不进去。这时候把前面那块硬盘拔掉重插了一次，卒，现在也找不到`ldmtool`恢复出来的`dm_0`磁盘分区索引了，再挂载mapper也没用。
+
+折腾好久，最后还是靠傻瓜软件解决：DiskInternals Linux Reader，本来是用来在Windows上读ext分区，这次直接打开软件它就把`ldm`分区显示出来了，终于可以直接保存拷贝了。
