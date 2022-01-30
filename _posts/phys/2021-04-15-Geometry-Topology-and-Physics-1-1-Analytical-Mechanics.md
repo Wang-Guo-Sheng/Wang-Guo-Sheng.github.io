@@ -101,7 +101,7 @@ $$
 \end{equation}
 $$
 
-Substituting $L=\frac{1}{2}m\dot{q}^2-V(q)$, this reduces to $p = m\dot{q},\ m\ddot{q}+\frac{\partial V}{\partial q}=0$.
+Let $L=\frac{1}{2}m\dot{q}^2-V(q)$, then (eq:ELEk) reduces to $p = m\dot{q},\ m\ddot{q}+\frac{\partial V}{\partial q}=0$.
 
 ### Functional derivative
 
@@ -175,14 +175,260 @@ Remarks:
 
 ## Hamiltonian formalism
 
-Hamiltonian is the Legendre transformation of the Lagrangian
+Hamiltonian is the Legendre transformation of the Lagrangian with respect to $\dot{q}$, into the phase space $(q_k,p_k)$.
 
 $$
 \tag{eq:Hd}
 H(q,p):=\sum_k p_k\dot{q}_k - L(q,\dot{q}),
 $$
 
+This transformation requires the Jacobian determinant to be non-zero.
+
+$$
+\color{red}\det{\mathcal{J}} = \det{\frac{\partial p_i}{\partial \dot{q}_j}}
+= \det{\frac{\partial^2 L}{\partial \dot{q}_j\partial\dot{q}_i}}
+\neq 0.
+\tag{eq:detJ}
+$$
+
+> For Lagrangians without cross terms between the velocities like $L = \frac{1}{2}\sum_i{m_i\dot{q}_i^2}-V$, (eq:detJ) is simply $m_i\neq 0$.
+>
+> An intuitive example is:
+>
+> $L=\sum_k\frac{1}{2}m\dot{q}_k^2-V(q) = T-V$
+>
+> $L+H = \sum_k p_k\dot{q_k}=\sum_k m\dot{q}_k^2 = 2T$
+>
+> $H = \sum_k\frac{1}{2}m\dot{q}_k^2+V(q) = T+V$
+
+Under an infinitesimal variation of $q_k$ and $p_k$,
+
+$$
+\begin{equation}
+\begin{split}
+\delta H &= \sum_k\left[
+        \delta p_k\dot{q}_k + p_k\delta\dot{q}_k
+        - \frac{\partial L}{\partial q_k}\delta q_k
+        - \frac{\partial L}{\partial \dot{q}_k}\delta \dot{q}_k
+     \right]\\
+     &= \sum_k\left[
+       \delta p_k\dot{q}_k
+        - \frac{\partial L}{\partial q_k}\delta q_k
+     \right],
+ \end{split}
+\tag{eq:delH}
+ \end{equation}
+$$
+
+corresponding terms
+
+$$
+\frac{\partial H}{\partial p_k} = \dot{q}_k,\quad
+\frac{\partial H}{\partial q_k} = -\frac{\partial L}{\partial q_k}.
+\tag{eq:HE1}
+$$
+
+Substituting the Euler-Lagrange equation, we get
+
+$$
+\frac{\partial H}{\partial p_k} = \dot{q}_k,\quad
+\frac{\partial H}{\partial q_k} = -\dot{p}_k,
+\tag{eq:HE2}
+$$
+
+Substituting $L = \frac{1}{2}m\dot{\mathbf{q}}^2-V{\dot{\mathbf{q}}}$, then (eq:HE2) correspond to *definition of momentum* and *Newton's equation* respectively.
+
+### Poisson bracket
+
+$$
+[A,B] := \sum_k\left(
+    \frac{\partial A}{\partial q_k}\frac{\partial B}{\partial p_k}
+    -\frac{\partial A}{\partial p_k}\frac{\partial B}{\partial q_k}.
+\right)
+\tag{eq:PB}
+$$
+
+The Poisson bracket is a **Lie bracket**, namely it is linear, antisymmetric, and Jacobi identical.
+
+**Jacobi identity**: (see for Landau's book)
+
+$$
+[[A,B],C] + [[C,A],B] + [[B,C],A] = 0.
+\tag{eq:JI}
+$$
+
+ Fundamental Poisson brackets
+
+$$
+ [p_i,p_j]=[q_i,q_j]=0,\quad
+ [q_i,p_j]=\delta_{ij}.
+ \tag{eq:FPB}
+$$
+
+Using Poisson brackets, the time development of $A(q,p)$ can be written as
+
+$$
+\frac{\mathrm{d}A}{\mathrm{d}t}=[A,H].
+\tag{eq:AP}
+$$
+
+From (eq:AP) :
+
+1. $[A,H]=0$ implies that A is conserved.
+2. Hamilton's equations can be written as
+
+$$
+\frac{\partial H}{\partial p_k} = [q_k,H],\quad
+\frac{\partial H}{\partial q_k} = -[p_k,H].
+\tag{eq:HEP}
+$$
+
+### Noether's theorem
+
+Suppose the Hamiltonian of a system is invariant under an infinitesimal *coordinate transformation* $q_k\to q'_k=q_k+\varepsilon f_k(q)$,
+then
+
+$$
+Q=\sum_k p_kf_k(q)
+\tag{eq:NT}
+$$
+
+is conserved.
+
+#### Proof
+
+The coordinate transform yields
+
+$$
+\begin{equation}
+\begin{split}
+\frac{\partial q_i'}{\partial q_j}
+    &= \frac{\partial}{\partial q_j}\left[q_i+\varepsilon f_i(q)\right]
+    = \delta_{ij} + \varepsilon\frac{\partial f_i(q)}{\partial q_j}
+        + \mathcal{O}(\varepsilon ^2),\\
+\frac{\partial q_i}{\partial q_j'}
+    &= \frac{\partial}{\partial q_j'}\left[q_i'-\varepsilon f_i(q)\right]
+    = \delta_{ij} - \varepsilon\frac{\partial f_i(q)}{\partial q_j'}
+    + \mathcal{O}(\varepsilon ^2),
+\end{split}
+\tag{eq:Lij}
+\end{equation}
+$$
+
+where
+
+$$
+\begin{equation}
+\begin{split}
+\frac{\partial f_i(q)}{\partial q_j'}
+    &=\sum_k
+        \frac{\partial q_k}{\partial q_j'}
+        \frac{\partial f_i(q)}{\partial q_k}\\
+    &=\sum_k\left[
+            \delta_{kj} - \varepsilon\frac{\partial f_k(q)}{\partial q_j'}
+            + \mathcal{O}(\varepsilon ^2)
+        \right]
+            \frac{\partial f_i(q)}{\partial q_k}\\
+    &=\frac{\partial f_i(q)}{\partial q_j}
+        + \mathcal{O}(\varepsilon),
+\end{split}
+\tag{eq:Lji0}
+\end{equation}
+$$
+
+so
+
+$$
+\frac{\partial q_i}{\partial q_j'}
+    = \frac{\partial}{\partial q_j'}\left[q_i'-\varepsilon f_i(q)\right]
+    = \delta_{ij} - \varepsilon\frac{\partial f_i(q)}{\partial q_j}
+    + \mathcal{O}(\varepsilon ^2).
+\tag{eq:Lji1}
+$$
+
+Using (eq:Lji1), since $H$ is invariant, the momentum transforms as
+
+$$
+\begin{equation}
+\begin{split}
+p_k\to p_k' &= -\frac{\partial H}{\partial q_k'}
+    = -\sum_l
+            \frac{\partial q_l}{\partial q'_k}
+            \frac{\partial H}{\partial q_l}\\
+    &= -\sum_l
+            \left[
+                \delta_{kl} - \varepsilon\frac{\partial f_l(q)}{\partial q_k}
+                + \mathcal{O}(\varepsilon ^2)
+            \right]
+        \frac{\partial H}{\partial q_l}\\
+    &= -\frac{\partial H}{\partial q_k}
+        + \varepsilon\frac{\partial f_l(q)}{\partial q_k}
+                    \frac{\partial H}{\partial q_l}
+        + \mathcal{O}(\varepsilon ^2)\\
+    &= p_k
+        - \varepsilon\frac{\partial f_l(q)}{\partial q_k}
+                    q_l
+        + \mathcal{O}(\varepsilon ^2).
+\end{split}
+\tag{eq:MT}
+\end{equation}
+$$
+
+The Hamiltonian is invariant implies that:
+
+$$
+\begin{equation}
+\begin{split}
+0   &=H(q_k',p_k')-H(q_k,p_k)\\
+    &=\sum_k\left[
+            \frac{\partial H}{\partial q_k} \varepsilon f_k(q)
+            - \frac{\partial H}{\partial p_k}
+                \varepsilon \sum_j p_j\frac{\partial f_j(q)}{\partial q_k}
+        \right]\\
+    &=\varepsilon \sum_k\left[
+            \frac{\partial H}{\partial q_k} \frac{\partial Q}{\partial p_k} 
+            - \frac{\partial H}{\partial p_k} \frac{\partial Q}{\partial q_k} 
+        \right]\\
+    &= [H, Q] = \frac{\mathrm{d}Q}{\mathrm{d}t}.
+\end{split}
+\tag{eq:HQ}
+\end{equation}
+$$
+
+which shows that *Q* is conserved.$\qquad\square$
+
+Noether's theorem shows that to find a conserved quantity is equivalent to finding a transformation which leaves the Hamiltonian invariant.
+
+#### Generator of the transform
+
+Since $q_i$ and $p_k$ between each other, $\frac{\partial q_i}{\partial p_k}=0$, the Poisson bracket
+
+$$
+[q_i, Q] = 
+\sum_k\left[
+    \frac{\partial q_i}{\partial q_k}
+        \frac{\partial Q}{\partial p_k}
+    - \frac{\partial q_i}{\partial p_k}
+        \frac{\partial Q}{\partial q_k}
+\right]
+= \sum_k\delta_{ik} f_k = f_i(q),
+\tag{eq:qiQ}
+$$
+
+which shows that $\delta q_i = \varepsilon f_i(q)=\varepsilon[q_i, Q]$. In this sense $Q$ is called the *generator* of the transformation $\delta q_i$.
+
+| System           | 1D particle                | 2D particle                                          |
+| ---------------- | -------------------------- | ---------------------------------------------------- |
+| Lagrangian       | $L = \frac{m\dot{r}^2}{2}$ | $L=\frac{1}{2}m(\dot{r}^2+r^2\dot{\theta}^2)-V(r)$   |
+| Hamiltonian      | $H = \frac{p^2}{2m}$       | $H=\frac{p_r^2}{2m}+\frac{p_{\theta}^2}{2mr^2}+V(r)$ |
+| Symmetry         | Translation                | Rotation around  $z$                                 |
+| Transform of q   | $r\to r + \varepsilon$     | $\theta\to \theta+\varepsilon$                       |
+| Transform of p   | $p\to p$                   | $p_{\theta}\to p_{\theta}$                           |
+| Generator Q      | $p$                        | $p_{\theta}=mr^2\dot{\theta}$                        |
+| Conservation law | Momentum                   | Angular momentum around $z$                          |
 
 # References
+
+This article is based on:
 
 1. Nakahara, Mikio. *Geometry, Topology, and Physics*. 2nd ed. Graduate Student Series in Physics. Bristol ; Philadelphia: Institute of Physics Publishing, 2003.
