@@ -3,13 +3,14 @@ layout: blog
 istop: false
 tech: true
 title: "Manjaro Kernel Panic"
-background-image: "kernel"
+background-image: ""
 date: 2023-07-25 14:45
 category: 技术
 tags:
 - update
 - error
 - linux
+- kernel
 ---
 
 After an update my manjaro system wouldn't boot after showing the following error messages:
